@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #335b80;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clinic.controller.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="AZURE" height="600.0" layoutX="686.0" stroke="AZURE" strokeType="INSIDE" width="214.0" />
+      <AnchorPane layoutX="400.0" prefHeight="600.0" prefWidth="460.0" style="-fx-background-color: azure; -fx-border-radius: 50; -fx-background-radius: 50;">
+         <children>
+            <TextField fx:id="usernameField" layoutX="96.0" layoutY="261.0" prefHeight="62.0" prefWidth="310.0" promptText="Enter email/username" style="-fx-background-color: none; -fx-border-color: #335b80; -fx-border-width: 0 0 1 0;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label fx:id="usernameErrorLabel" layoutX="96.0" layoutY="324.0" prefHeight="38.0" prefWidth="310.0" text="this is an error label 1" textFill="#fc3a3a" />
+            <Label fx:id="passwordErrorLabel" layoutX="96.0" layoutY="416.0" prefHeight="38.0" prefWidth="310.0" text="this is an error label 2" textFill="#fc3a3a" />
+            <Button fx:id="loginButton" layoutX="156.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="41.0" prefWidth="220.0" style="-fx-background-color: #335b80; -fx-border-color: none; -fx-border-radius: 50; -fx-background-radius: 50;" text="LOG IN" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="passwordField" layoutX="96.0" layoutY="353.0" prefHeight="62.0" prefWidth="310.0" promptText="Enter password" style="-fx-background-color: none; -fx-border-color: #335b80; -fx-border-width: 0 0 1 0;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="152.0" fitWidth="137.0" layoutX="205.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="214.0" layoutY="181.0" prefHeight="38.0" prefWidth="114.0" text="Welcome Back!" textFill="#234994">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="180.0" layoutY="200.0" prefHeight="38.0" prefWidth="172.0" text="Sign in to access your account." textFill="#234994" />
+            <ImageView fitHeight="23.0" fitWidth="32.0" layoutX="374.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/hidden.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="32.0" layoutX="374.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/seen.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="374.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/smallheart.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="forgotPasswordLink" layoutX="205.0" layoutY="529.0" mnemonicParsing="false" onAction="#handleForgotPassword" prefHeight="32.0" prefWidth="122.0" style="-fx-background-color: none;" text="Forgot Password" textFill="#234994" underline="true" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="494.0" fitWidth="371.0" layoutX="14.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/doctor.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: none;" text="◀ Back " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

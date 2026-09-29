@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #335b80;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clinic.controller.HomeController">
+   <children>
+      <ImageView fitHeight="494.0" fitWidth="409.0" layoutX="402.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Health.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="140.0" layoutY="213.0" prefHeight="130.0" prefWidth="296.0" text="HEALTH" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="735.0" layoutY="323.0" prefHeight="130.0" prefWidth="296.0" text="CARE" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="96.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="2.0" layoutX="24.0" layoutY="279.0" stroke="WHITE" strokeType="INSIDE" width="117.0" />
+      <ImageView fitHeight="175.0" fitWidth="262.0" layoutX="927.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/heartbeat.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="238.0" layoutY="292.0" prefHeight="102.0" prefWidth="180.0" text="Your Health, Our Priority." textFill="WHITE">
+         <font>
+            <Font name="Papyrus" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="971.0" layoutY="26.0" mnemonicParsing="false" onAction="#openLogin" prefHeight="36.0" prefWidth="203.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 50;" text="LOG IN" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
